@@ -7,12 +7,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const translations = {
     es: {
       nav_tools: "Herramientas",
+      nav_github: "GitHub",
       nav_downloads: "Descargas",
       hero_title: "Herramientas para desarrolladores <span class=\"hero__highlight\">VTEX IO</span>",
       hero_subtitle: "Un ecosistema de herramientas diseñadas para acelerar tu desarrollo, optimizar tu código y simplificar tus despliegues.",
       hero_btn_explore: "Explorar Herramientas",
       hero_btn_github: "Ver en GitHub",
-      
+
       showcase_label: "Ecosistema",
       showcase_title: "Tres herramientas, un objetivo",
       showcase_generator_title: "VTEX Landing Generator",
@@ -57,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
       feat_dep_1: "Soporte para Patch y Major releases estables.",
       feat_dep_2: "Flujo simplificado para publicar nuevas custom apps.",
       feat_dep_3: "Verificaciones previas de manifest y directorios.",
-      
+
       dl_label: "Descargas",
       dl_title: "Empieza a usarlas hoy",
       dl_desc: "Instala nuestras herramientas mediante npm o descarga los binarios de la GUI.",
@@ -67,15 +68,21 @@ document.addEventListener('DOMContentLoaded', () => {
       btn_dl_win: "Descargar .exe",
       btn_dl_linux: "Descargar .AppImage",
       dl_web: "Ejecutable desde el navegador en cualquier SO.",
+      cta_label: "Open Source",
+      cta_title: "Todo lo que necesitás para desarrollar en VTEX IO",
+      cta_desc: "Tres herramientas, un objetivo. Todas de código abierto, sin costos y listas para usar.",
+      cta_btn_github: "Ver en GitHub",
+      cta_btn_tools: "Explorar herramientas",
     },
     en: {
       nav_tools: "Tools",
+      nav_github: "GitHub",
       nav_downloads: "Downloads",
       hero_title: "Tools for <span class=\"hero__highlight\">VTEX IO</span> developers",
       hero_subtitle: "An ecosystem of tools designed to accelerate your development, optimize your code, and simplify your deployments.",
       hero_btn_explore: "Explore Tools",
       hero_btn_github: "View on GitHub",
-      
+
       showcase_label: "Ecosystem",
       showcase_title: "Three tools, one goal",
       showcase_generator_title: "VTEX Landing Generator",
@@ -120,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
       feat_dep_1: "Support for stable Patch and Major releases.",
       feat_dep_2: "Simplified flow for publishing new custom apps.",
       feat_dep_3: "Pre-checks for manifest and directories.",
-      
+
       dl_label: "Downloads",
       dl_title: "Start using them today",
       dl_desc: "Install our tools easily via npm or download the GUI binaries.",
@@ -130,6 +137,11 @@ document.addEventListener('DOMContentLoaded', () => {
       btn_dl_win: "Download .exe",
       btn_dl_linux: "Download .AppImage",
       dl_web: "Runnable from the browser on any OS.",
+      cta_label: "Open Source",
+      cta_title: "Everything you need to build on VTEX IO",
+      cta_desc: "Three tools, one goal. All open source, free, and ready to use.",
+      cta_btn_github: "View on GitHub",
+      cta_btn_tools: "Explore tools",
     }
   };
 
@@ -171,9 +183,22 @@ document.addEventListener('DOMContentLoaded', () => {
       })
       .catch(err => console.error(`Error fetching npm version for ${packetName}:`, err));
   }
-  
+
   fetchNPMVersion('vtex-css-sanitizer-cli', 'npmVersionSanitizer');
   fetchNPMVersion('vtex-deploy-helper', 'npmVersionDeploy');
+
+  // Versión del landing generator (no está en npm, se lee del package.json del repo)
+  const generatorVersionEl = document.getElementById('versionGenerator');
+  if (generatorVersionEl) {
+    fetch('https://raw.githubusercontent.com/emanueleelias/vtex-landing-generator/main/package.json')
+      .then(res => res.json())
+      .then(data => {
+        if (data && data.version) {
+          generatorVersionEl.textContent = `v${data.version}`;
+        }
+      })
+      .catch(() => { generatorVersionEl.style.display = 'none'; });
+  }
 
   // Copy buttons
   function setupCopyButton(blockId, btnId) {
