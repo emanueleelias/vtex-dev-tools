@@ -256,12 +256,10 @@
                 </div>
                 <div class="tool-detail__visual carousel">
                     <div class="carousel__track" id="track-generator">
-                        <img src="https://dummyimage.com/800x533/16161f/6366f1" alt="Generator Mockup 1"
+                        <img src="assets/vtex-landing-generator-1.png" alt="Generator Mockup 1"
                             class="carousel__slide active">
-                        <img src="https://dummyimage.com/800x533/16161f/6366f1" alt="Generator Mockup 2"
-                            class="carousel__slide">
-                        <img src="https://dummyimage.com/800x533/16161f/6366f1" alt="Generator Mockup 3"
-                            class="carousel__slide">
+                        <img src="assets/vtex-landing-generator-2.png" alt="Generator Mockup 2" class="carousel__slide">
+                        <img src="assets/vtex-landing-generator-3.png" alt="Generator Mockup 3" class="carousel__slide">
                     </div>
                     <button class="carousel__btn carousel__btn--prev" aria-label="Anterior"
                         data-target="track-generator">
@@ -354,12 +352,10 @@
                 </div>
                 <div class="tool-detail__visual carousel">
                     <div class="carousel__track" id="track-sanitizer">
-                        <img src="https://dummyimage.com/800x533/16161f/6366f1" alt="Sanitizer Mockup 1"
+                        <img src="assets/vtex-css-sanitizer-1.png" alt="Sanitizer Mockup 1"
                             class="carousel__slide active">
-                        <img src="https://dummyimage.com/800x533/16161f/6366f1" alt="Sanitizer Mockup 2"
-                            class="carousel__slide">
-                        <img src="https://dummyimage.com/800x533/16161f/6366f1" alt="Sanitizer Mockup 3"
-                            class="carousel__slide">
+                        <img src="assets/vtex-css-sanitizer-2.png" alt="Sanitizer Mockup 2" class="carousel__slide">
+                        <img src="assets/vtex-css-sanitizer-3.png" alt="Sanitizer Mockup 3" class="carousel__slide">
                     </div>
                     <button class="carousel__btn carousel__btn--prev" aria-label="Anterior"
                         data-target="track-sanitizer">
@@ -446,12 +442,9 @@
                 </div>
                 <div class="tool-detail__visual carousel">
                     <div class="carousel__track" id="track-deploy">
-                        <img src="https://dummyimage.com/800x533/16161f/6366f1" alt="Deploy Mockup 1"
-                            class="carousel__slide active">
-                        <img src="https://dummyimage.com/800x533/16161f/6366f1" alt="Deploy Mockup 2"
-                            class="carousel__slide">
-                        <img src="https://dummyimage.com/800x533/16161f/6366f1" alt="Deploy Mockup 3"
-                            class="carousel__slide">
+                        <img src="assets/vtex-deploy-helper-1.png" alt="Deploy Mockup 1" class="carousel__slide active">
+                        <img src="assets/vtex-deploy-helper-2.png" alt="Deploy Mockup 2" class="carousel__slide">
+                        <img src="assets/vtex-deploy-helper-3.png" alt="Deploy Mockup 3" class="carousel__slide">
                     </div>
                     <button class="carousel__btn carousel__btn--prev" aria-label="Anterior" data-target="track-deploy">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -518,6 +511,33 @@
             </div>
         </div>
     </footer>
+
+    <!-- ============ LIGHTBOX ============ -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox__close" id="lightboxClose" aria-label="Cerrar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+        </button>
+        <div class="lightbox__content">
+            <div class="lightbox__track" id="lightboxTrack"></div>
+            <button class="carousel__btn carousel__btn--prev lightbox__btn" id="lightboxPrev" aria-label="Anterior">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6" />
+                </svg>
+            </button>
+            <button class="carousel__btn carousel__btn--next lightbox__btn" id="lightboxNext" aria-label="Siguiente">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6" />
+                </svg>
+            </button>
+            <div class="lightbox__dots" id="lightboxDots"></div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
