@@ -265,7 +265,7 @@ img {
 }
 
 .hero__highlight {
-  background: linear-gradient(135deg, var(--accent), #818cf8);
+  background: linear-gradient(135deg, var(--accent), var(--green));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -358,8 +358,8 @@ img {
 }
 
 .type-tag--web {
-  background: var(--purple-soft);
-  color: var(--purple);
+  background: var(--green-soft);
+  color: var(--green);
 }
 
 .type-tag--gui {
@@ -368,8 +368,8 @@ img {
 }
 
 .type-tag--cli {
-  background: var(--accent-soft);
-  color: var(--accent);
+  background: var(--green-soft);
+  color: var(--green);
 }
 
 /* --- Showcase Tools --- */
@@ -420,8 +420,8 @@ img {
 }
 
 .tool-card__icon--web {
-  background: var(--purple-soft);
-  color: var(--purple);
+  background: var(--green-soft);
+  color: var(--green);
 }
 
 .tool-card__icon--css {
@@ -430,8 +430,8 @@ img {
 }
 
 .tool-card__icon--cli {
-  background: var(--accent-soft);
-  color: var(--accent);
+  background: var(--green-soft);
+  color: var(--green);
 }
 
 .tool-card h3 {
