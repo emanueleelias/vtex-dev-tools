@@ -15,7 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
       hero_btn_github: "Ver en GitHub",
 
       showcase_label: "Ecosistema",
-      showcase_title: "Tres herramientas, un objetivo",
+      showcase_title: "Cuatro herramientas, un objetivo",
+      showcase_init_title: "VTEX Init Helper",
+      showcase_init_desc: "Inicializa tu entorno conectándose automáticamente con Jira y Bitbucket.",
       showcase_generator_title: "VTEX Landing Generator",
       showcase_generator_desc: "Generador visual drag & drop para construir estructuras de bloques VTEX IO y exportarlas como JSONC.",
       showcase_sanitizer_title: "VTEX CSS Sanitizer",
@@ -26,12 +28,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
       workflow_label: "Flujo de Trabajo",
       workflow_title: "Integración perfecta",
-      workflow_build_title: "1. Construir",
+      workflow_init_title: "1. Inicializar",
+      workflow_init_desc: "Prepara tu entorno, rama de Jira y linkea el workspace automáticamente.",
+      workflow_build_title: "2. Construir",
       workflow_build_desc: "Crea layouts visualmente y exporta el código con el Landing Generator.",
-      workflow_optimize_title: "2. Optimizar",
+      workflow_optimize_title: "3. Optimizar",
       workflow_optimize_desc: "Limpia tu CSS y asegura la calidad del código con el Sanitizer.",
-      workflow_deploy_title: "3. Desplegar",
+      workflow_deploy_title: "4. Desplegar",
       workflow_deploy_desc: "Sube tus cambios a producción de forma segura con el Deploy Helper.",
+
+      init_label: "CLI Tool",
+      init_title: "VTEX Init Helper",
+      init_desc_1: "Comienza tu tarea en segundos. Esta herramienta se conecta con Jira y Bitbucket para crear tu rama y workspace de prueba automáticamente resolviendo los links correspondientes.",
+      init_desc_2: "Simplifica tu flujo inicial, asegurando que tu entorno esté correctamente linkeado y con las convenciones adecuadas listas para trabajar.",
+      feat_init_1: "Generación automática de rama desde el ticket de Jira.",
+      feat_init_2: "Creación y configuración del VTEX workspace de prueba.",
+      feat_init_3: "Inclusión automática del link web en Jira.",
 
       generator_label: "Web App",
       generator_title: "VTEX Landing Generator",
@@ -70,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
       dl_web: "Ejecutable desde el navegador en cualquier SO.",
       cta_label: "Open Source",
       cta_title: "Todo lo que necesitás para desarrollar en VTEX IO",
-      cta_desc: "Tres herramientas, un objetivo. Todas de código abierto, sin costos y listas para usar.",
+      cta_desc: "Cuatro herramientas, un objetivo. Todas de código abierto, sin costos y listas para usar.",
       cta_btn_github: "Ver en GitHub",
       cta_btn_tools: "Explorar herramientas",
     },
@@ -84,7 +96,9 @@ document.addEventListener('DOMContentLoaded', () => {
       hero_btn_github: "View on GitHub",
 
       showcase_label: "Ecosystem",
-      showcase_title: "Three tools, one goal",
+      showcase_title: "Four tools, one goal",
+      showcase_init_title: "VTEX Init Helper",
+      showcase_init_desc: "Initialize your development environment by automatically connecting with Jira and Bitbucket.",
       showcase_generator_title: "VTEX Landing Generator",
       showcase_generator_desc: "Visual drag & drop generator to build VTEX IO block structures and export them as JSONC.",
       showcase_sanitizer_title: "VTEX CSS Sanitizer",
@@ -95,12 +109,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
       workflow_label: "Workflow",
       workflow_title: "Seamless integration",
-      workflow_build_title: "1. Build",
+      workflow_init_title: "1. Initialize",
+      workflow_init_desc: "Prepare your environment, Jira branch, and automatically link your workspace.",
+      workflow_build_title: "2. Build",
       workflow_build_desc: "Create layouts visually and export the code with the Landing Generator.",
-      workflow_optimize_title: "2. Optimize",
+      workflow_optimize_title: "3. Optimize",
       workflow_optimize_desc: "Clean your CSS and ensure code quality with the Sanitizer.",
-      workflow_deploy_title: "3. Deploy",
+      workflow_deploy_title: "4. Deploy",
       workflow_deploy_desc: "Push your changes to production safely with the Deploy Helper.",
+
+      init_label: "CLI Tool",
+      init_title: "VTEX Init Helper",
+      init_desc_1: "Start your task in seconds. This tool connects with Jira and Bitbucket to create your branch and test workspace automatically while resolving the corresponding links.",
+      init_desc_2: "Simplify your initial workflow, ensuring your environment is properly linked and follows the right conventions ready for work.",
+      feat_init_1: "Automatic branch generation from Jira ticket.",
+      feat_init_2: "Creation and configuration of the VTEX test workspace.",
+      feat_init_3: "Automatic inclusion of the web link in Jira.",
 
       generator_label: "Web App",
       generator_title: "VTEX Landing Generator",
@@ -139,7 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
       dl_web: "Runnable from the browser on any OS.",
       cta_label: "Open Source",
       cta_title: "Everything you need to build on VTEX IO",
-      cta_desc: "Three tools, one goal. All open source, free, and ready to use.",
+      cta_desc: "Four tools, one goal. All open source, free, and ready to use.",
       cta_btn_github: "View on GitHub",
       cta_btn_tools: "Explore tools",
     }
@@ -186,6 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   fetchNPMVersion('vtex-css-sanitizer-cli', 'npmVersionSanitizer');
   fetchNPMVersion('vtex-deploy-helper', 'npmVersionDeploy');
+  fetchNPMVersion('vtex-init-helper', 'npmVersionInit');
 
   // Versión del landing generator (no está en npm, se lee del package.json del repo)
   const generatorVersionEl = document.getElementById('versionGenerator');

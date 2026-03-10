@@ -4,13 +4,16 @@ Una suite centralizada de herramientas open-source diseñadas para desarrollador
 
 ## 🛠 Herramientas incluidas
 
-### 1. [VTEX Landing Generator](https://github.com/emanueleelias/vtex-landing-generator)
+### 1. [VTEX Init Helper](https://github.com/emanueleelias/vtex-init-helper)
+Inicializa tu entorno conectándose automáticamente con Jira y Bitbucket para crear tu rama y workspace de prueba automáticamente resolviendo los links correspondientes.
+
+### 2. [VTEX Landing Generator](https://github.com/emanueleelias/vtex-landing-generator)
 Generador visual drag & drop para construir estructuras de bloques VTEX IO y exportarlas como JSONC. Evita escribir código a mano cuando armas tus layouts en el `store-theme`.
 
-### 2. [VTEX CSS Sanitizer](https://github.com/emanueleelias/vtex-css-sanitizer)
+### 3. [VTEX CSS Sanitizer](https://github.com/emanueleelias/vtex-css-sanitizer)
 Limpia y optimiza las hojas de estilo encontrando clases CSS huérfanas y `blockClass` sin uso real en tu proyecto. Disponible como CLI y aplicación GUI multiplataforma.
 
-### 3. [VTEX Deploy Helper](https://github.com/emanueleelias/vtex-deploy-helper)
+### 4. [VTEX Deploy Helper](https://github.com/emanueleelias/vtex-deploy-helper)
 Automatiza los procesos repetitivos de despliegue en VTEX IO. Desde publicación de nuevas custom apps hasta actualización de releases maje y patch, facilitando la integración con `site-editor`.
 
 ---

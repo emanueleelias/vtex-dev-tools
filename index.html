@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VTEX Dev Tools — Ecosistema para Desarrolladores</title>
     <meta name="description"
-        content="Una suite de herramientas para desarrolladores VTEX IO: Landing Generator, CSS Sanitizer y Deploy Helper.">
-    <meta name="keywords" content="vtex, vtex io, developer tools, css sanitizer, deploy helper, landing generator">
+        content="Una suite de herramientas para desarrolladores VTEX IO: Init Helper, Landing Generator, CSS Sanitizer y Deploy Helper.">
+    <meta name="keywords" content="vtex, vtex io, developer tools, init helper, css sanitizer, deploy helper, landing generator">
     <meta name="author" content="Elias Daniel Emanuele">
 
     <meta property="og:title" content="VTEX Dev Tools">
     <meta property="og:description"
-        content="Una suite de herramientas para desarrolladores VTEX IO: Landing Generator, CSS Sanitizer y Deploy Helper.">
+        content="Una suite de herramientas para desarrolladores VTEX IO: Init Helper, Landing Generator, CSS Sanitizer y Deploy Helper.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://emanueleelias.github.io/vtex-dev-tools/">
 
@@ -62,7 +62,7 @@
         <div class="container">
             <div class="hero__badges">
                 <span class="badge"><span class="badge__dot badge__dot--gh"></span>Open Source</span>
-                <span class="badge"><span class="badge__dot badge__dot--tools"></span>3 Herramientas</span>
+                <span class="badge"><span class="badge__dot badge__dot--tools"></span>4 Herramientas</span>
             </div>
             <h1 class="hero__title" data-i18n="hero_title">
                 Herramientas para desarrolladores <span class="hero__highlight">VTEX IO</span>
@@ -87,9 +87,24 @@
         <div class="container">
             <div class="text-center reveal">
                 <span class="section__label" data-i18n="showcase_label">Ecosistema</span>
-                <h2 class="section__title" data-i18n="showcase_title">Tres herramientas, un objetivo</h2>
+                <h2 class="section__title" data-i18n="showcase_title">Cuatro herramientas, un objetivo</h2>
             </div>
             <div class="showcase__grid">
+                <!-- Init Helper -->
+                <a href="#init" class="tool-card reveal">
+                    <div class="tool-card__header">
+                        <div class="tool-card__icon tool-card__icon--cli">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 data-i18n="showcase_init_title">VTEX Init Helper</h3>
+                    <p data-i18n="showcase_init_desc">Inicializa tu entorno de desarrollo conectándose automáticamente con Jira y Bitbucket.</p>
+                    <span class="tool-card__link"><span data-i18n="showcase_link">Ver detalles →</span></span>
+                </a>
                 <!-- Generator -->
                 <a href="#generator" class="tool-card reveal">
                     <div class="tool-card__header">
@@ -154,12 +169,30 @@
                     <div class="workflow__icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                        </svg>
+                    </div>
+                    <h4 data-i18n="workflow_init_title">1. Inicializar</h4>
+                    <p data-i18n="workflow_init_desc">Prepara tu entorno, rama de Jira y linkea el workspace automáticamente.</p>
+                </div>
+
+                <svg class="workflow__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" width="32" height="32">
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" />
+                </svg>
+
+                <div class="workflow__step">
+                    <div class="workflow__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
                             <polygon points="12 2 2 7 12 12 22 7 12 2" />
                             <polyline points="2 17 12 22 22 17" />
                             <polyline points="2 12 12 17 22 12" />
                         </svg>
                     </div>
-                    <h4 data-i18n="workflow_build_title">1. Construir</h4>
+                    <h4 data-i18n="workflow_build_title">2. Construir</h4>
                     <p data-i18n="workflow_build_desc">Crea layouts visualmente y exporta el código con el Landing
                         Generator.</p>
                 </div>
@@ -178,7 +211,7 @@
                             <polyline points="22 4 12 14.01 9 11.01" />
                         </svg>
                     </div>
-                    <h4 data-i18n="workflow_optimize_title">2. Optimizar</h4>
+                    <h4 data-i18n="workflow_optimize_title">3. Optimizar</h4>
                     <p data-i18n="workflow_optimize_desc">Limpia tu CSS y asegura la calidad del código con el
                         Sanitizer.</p>
                 </div>
@@ -198,9 +231,89 @@
                             <line x1="12" y1="3" x2="12" y2="15" />
                         </svg>
                     </div>
-                    <h4 data-i18n="workflow_deploy_title">3. Desplegar</h4>
+                    <h4 data-i18n="workflow_deploy_title">4. Desplegar</h4>
                     <p data-i18n="workflow_deploy_desc">Sube tus cambios a producción de forma segura con el Deploy
                         Helper.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ INIT HELPER DETAIL ============ -->
+    <section class="tool-detail" id="init-helper">
+        <div class="container">
+            <div class="tool-detail__content tool-detail__content--reverse reveal">
+                <div class="tool-detail__info">
+                    <span class="type-tag type-tag--cli" data-i18n="init_label">CLI Tool</span>
+                    <h2 data-i18n="init_title">VTEX Init Helper</h2>
+                    <p class="tool-detail__desc" data-i18n="init_desc_1">Comienza tu tarea en segundos. Esta herramienta se conecta con Jira y Bitbucket para crear tu rama y workspace de prueba automáticamente resolviendo los links correspondientes.</p>
+                    <p class="tool-detail__desc" data-i18n="init_desc_2">Simplifica tu flujo inicial, asegurando que tu entorno esté correctamente linkeado y con las convenciones adecuadas listas para trabajar.</p>
+
+                    <ul class="tool-detail__features">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"
+                                height="18">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg> <span data-i18n="feat_init_1">Generación automática de rama desde el ticket de Jira.</span>
+                        </li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"
+                                height="18">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg> <span data-i18n="feat_init_2">Creación y configuración del VTEX workspace de prueba.</span></li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"
+                                height="18">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg> <span data-i18n="feat_init_3">Inclusión automática del link web en Jira.</span>
+                        </li>
+                    </ul>
+
+                    <div class="tool-detail__actions">
+                        <a href="https://github.com/emanueleelias/vtex-init-helper" target="_blank" rel="noopener"
+                            class="btn btn--outline">GitHub</a>
+                    </div>
+
+                    <div class="install-card">
+                        <span class="install-card__label" data-i18n="dl_npm">Instalar Globalmente</span>
+                        <div class="copy-block" id="copyBlock-2">
+                            <code>npm install -g vtex-init-helper</code>
+                            <button class="copy-block__btn" id="copyBtn-2" aria-label="Copiar comando">
+                                <svg class="copy-block__icon copy-block__icon--copy" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                                    <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" />
+                                </svg>
+                                <svg class="copy-block__icon copy-block__icon--check" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div style="margin-top: 8px; font-size: 0.8rem; color: var(--text-muted);"
+                            id="npmVersionInit">npm v.x.x.x</div>
+                    </div>
+                </div>
+                <div class="tool-detail__visual carousel">
+                    <div class="carousel__track" id="track-init">
+                        <img src="assets/vtex-init-helper-1.png" alt="Init Mockup 1" class="carousel__slide active">
+                        <img src="assets/vtex-init-helper-2.png" alt="Init Mockup 2" class="carousel__slide">
+                    </div>
+                    <button class="carousel__btn carousel__btn--prev" aria-label="Anterior" data-target="track-init">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6" />
+                        </svg>
+                    </button>
+                    <button class="carousel__btn carousel__btn--next" aria-label="Siguiente" data-target="track-init">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6" />
+                        </svg>
+                    </button>
+                    <div class="carousel__dots" data-target="track-init">
+                        <button class="carousel__dot active" data-index="0" aria-label="Slide 1"></button>
+                        <button class="carousel__dot" data-index="1" aria-label="Slide 2"></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -476,7 +589,7 @@
                 <span class="section__label" data-i18n="cta_label">Open Source</span>
                 <h2 class="cta-final__title" data-i18n="cta_title">Todo lo que necesitás para desarrollar en VTEX IO
                 </h2>
-                <p class="cta-final__desc" data-i18n="cta_desc">Tres herramientas, un objetivo. Todas de código abierto,
+                <p class="cta-final__desc" data-i18n="cta_desc">Cuatro herramientas, un objetivo. Todas de código abierto,
                     sin costos y listas para usar.</p>
                 <div class="cta-final__actions">
                     <a href="https://github.com/emanueleelias" target="_blank" rel="noopener" class="btn btn--primary">
@@ -502,6 +615,8 @@
                 <span class="footer__copy">&copy; 2026 Elias Daniel Emanuele · Open Source Ecosystem</span>
             </div>
             <div class="footer__links">
+                <a href="https://github.com/emanueleelias/vtex-init-helper" target="_blank" rel="noopener">Init
+                    Helper</a>
                 <a href="https://github.com/emanueleelias/vtex-landing-generator" target="_blank" rel="noopener">Landing
                     Generator</a>
                 <a href="https://github.com/emanueleelias/vtex-css-sanitizer" target="_blank" rel="noopener">CSS
