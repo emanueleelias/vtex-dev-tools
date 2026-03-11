@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
       showcase_sanitizer_desc: "Limpia y optimiza las hojas de estilo encontrando clases CSS huérfanas y blockClass sin uso.",
       showcase_deploy_title: "VTEX Deploy Helper",
       showcase_deploy_desc: "Automatiza los procesos de despliegue, publicación y actualización de versiones de custom apps.",
-      showcase_link: "Ver destalles →",
+      showcase_link: "Ver detalles →",
 
       workflow_label: "Flujo de Trabajo",
       workflow_title: "Integración perfecta",
